@@ -10,7 +10,7 @@ CXXFILES = src/main.cpp
 OBJS = $(CXXFILES:.cpp=.o)
 
 # Options
-CXXFLAGS = -ggdb
+CXXFLAGS = -ggdb -I./include/ 
 LDFLAGS = -lpthread
 
 $(BIN): $(OBJS)
